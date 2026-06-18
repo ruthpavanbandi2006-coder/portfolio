@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B. Ruth Pavan | Professional Portfolio</title>
+  <meta name="description"
+    content="Professional portfolio of B. Ruth Pavan. Young developer pursuing B.Tech at DR.RVR NRI Institute of technology, specializing in Python, Java, C, and AI integrations.">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome Icons for visual flair -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="main-nav">
+    <a href="#home" class="logo" id="logo-link">B. Ruth Pavan</a>
+
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#home" class="active" id="nav-home">Home</a></li>
+      <li><a href="#about" id="nav-about">About</a></li>
+      <li><a href="#education" id="nav-education">Education</a></li>
+      <li><a href="#contact" id="nav-contact">Contact</a></li>
+    </ul>
+
+    <div style="display: flex; gap: 15px; align-items: center;">
+      <!-- Theme Switcher -->
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </button>
+
+      <!-- Mobile Burger Menu -->
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Home / Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-subtitle">Welcome to my space</p>
+      <h1 class="hero-title">Hello, I'm <span class="hero-title-name">B. Ruth Pavan</span></h1>
+
+      <div class="typing-container">
+        <span>A passionate </span>
+        <span class="typed-text" id="typing-element"></span>
+      </div>
+
+      <p class="hero-desc">
+        I am Graduate in the diploma in A.A.N.M & V.V.R.S.R polytechnic collage. I got 96% in my diploma. I am currently
+        perusing Btech in the DR.RVR NRI Institute of technology Deemed to be University. I also know about traditional
+        languages like C, java, Python. And I also young developer with the Basic Knowledge about the all languages . I
+        can use Ai tools to build presence applications and api’s. I also completed in “SPYPRO Technology pvt”.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary" id="btn-hire-me">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me
+        </a>
+        <a href="resume.pdf" download="B_Ruth_Pavan_Resume.pdf" class="btn btn-secondary" id="btn-download-resume">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-container">
+      <div class="hero-image-glow"></div>
+      <div class="profile-frame">
+        <img src="6A3F26CF-CF48-453F-B931-DBA6CBD0E3ED_1_105_c.jpeg" alt="B. Ruth Pavan Profile" class="profile-pic"
+          id="profile-img">
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-grid">
+      <!-- Personal Details & Biography -->
+      <div class="about-left">
+        <div class="glass-card">
+          <h3 class="card-title"><i class="fa-solid fa-user-astronaut"></i> Personal Profile</h3>
+          <p class="about-intro-text">
+            I am B. Ruth Pavan. I belong to nuclear family. My father name is B. Burna Chandra Rae and My mother name is
+            B.sridevi and I have a one brother his name is B. Krupabhishek. I am from Vijayawada.I want live a peacefull
+            life in my career
+            I want to get happy in my life. I also take care of my parents an give best life to my parents. My hobbies
+            are playing games,
+            reading Books, and Traveling
+          </p>
+
+          <div class="family-info-grid">
+            <div class="family-item">
+              <span class="family-label">Father's Name</span>
+              <span class="family-val" id="father-name">B. Burna Chandra Rae</span>
+            </div>
+            <div class="family-item">
+              <span class="family-label">Mother's Name</span>
+              <span class="family-val" id="mother-name">B. Sridevi</span>
+            </div>
+            <div class="family-item">
+              <span class="family-label">Sibling</span>
+              <span class="family-val" id="brother-name">B. Krupabhishek (Brother)</span>
+            </div>
+            <div class="family-item">
+              <span class="family-label">Location</span>
+              <span class="family-val" id="location-name">Vijayawada, India</span>
+            </div>
+          </div>
+
+          <div class="family-photo-container">
+            <img src="WhatsApp Image 2026-01-23 at 18.45.39 (1).jpeg" alt="B. Ruth Pavan Family" class="family-photo">
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="card-title"><i class="fa-solid fa-bullseye"></i> Career Objectives</h3>
+          <ul class="objectives-list">
+            <li>To become a software employee</li>
+            <li>To become a photographer</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Strengths & Weaknesses / Professional Skills -->
+      <div class="about-right">
+        <div class="glass-card">
+          <h3 class="card-title"><i class="fa-solid fa-scale-balanced"></i> Personal Balance</h3>
+
+          <div class="strengths-weaknesses">
+            <div class="strength-item">
+              <h4 style="color: var(--accent); margin-bottom: 15px;"><i class="fa-solid fa-circle-check"></i> Strengths
+              </h4>
+              <ul class="sw-list">
+                <li>My confidence</li>
+                <li>My thinking</li>
+              </ul>
+            </div>
+
+            <div class="weakness-item">
+              <h4 style="color: var(--secondary); margin-bottom: 15px;"><i class="fa-solid fa-circle-exclamation"></i>
+                Weaknesses</h4>
+              <ul class="sw-list">
+                <li>Over confidence</li>
+                <li>Over thinking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="card-title"><i class="fa-solid fa-code"></i> Technology Spectrum</h3>
+          <p style="color: var(--text-muted); margin-bottom: 15px;">
+            Hands-on familiarity with traditional technologies and modern development approaches:
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span
+              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">C</span>
+            <span
+              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Java</span>
+            <span
+              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Python</span>
+            <span
+              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">AI
+              Tools & APIs</span>
+            <span
+              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Application
+              Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2 class="section-title">Academic Qualifications</h2>
+
+    <div class="edu-container">
+      <div class="table-responsive glass-card" style="padding: 10px;">
+        <table class="edu-table" id="education-table">
+          <thead>
+            <tr>
+              <th>Class / Course</th>
+              <th>Institution / Board</th>
+              <th>Year of Passing</th>
+              <th>Percentage / GPA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Diploma in Engineering</strong></td>
+              <td>A.A.N.M & V.V.R.S.R Polytechnic College</td>
+              <td>2025</td>
+              <td><span class="percentage-badge">96%</span></td>
+            </tr>
+            <tr>
+              <td><strong>Class 10th (SSC)</strong></td>
+              <td>G.D.E.T.M.C High School</td>
+              <td>2022</td>
+              <td><span class="percentage-badge">89.5%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+
+    <div class="contact-container glass-card">
+      <h3 class="card-title" style="justify-content: center; margin-bottom: 25px;"><i class="fa-solid fa-envelope"></i>
+        Send a Message</h3>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" class="form-control" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" class="form-control" placeholder="How can I help you?" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" class="form-control" placeholder="Write your message here..."
+            required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"
+          id="btn-submit-contact">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-socials">
+      <a href="mailto:bandiruthpavan@gmail.com" title="Email" id="social-email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com" target="_blank" title="GitHub" id="social-github"><i
+          class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn" id="social-linkedin"><i
+          class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p class="footer-text" style="margin-top: 15px;">
+      &copy; 2026 B. Ruth Pavan. All Rights Reserved.
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
