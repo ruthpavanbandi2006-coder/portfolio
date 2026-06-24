@@ -164,4 +164,50 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1500);
     });
   }
+
+  // --- Lightbox Modal Interactivity ---
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const zoomableImages = document.querySelectorAll('.zoomable-image');
+
+  if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
+    zoomableImages.forEach(item => {
+      item.addEventListener('click', () => {
+        // Find the image element inside or use it directly if the clicked element is an img
+        const img = item.tagName === 'IMG' ? item : item.querySelector('img');
+        if (img) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || 'Zoomed Photo';
+          lightboxCaption.textContent = item.getAttribute('data-caption') || img.alt || '';
+          
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Disable scroll on body
+        }
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = ''; // Enable scroll back
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Close when clicking outside the content image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // Close on Escape key press
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  }
 });
+

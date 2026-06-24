@@ -71,7 +71,8 @@
 
     <div class="hero-image-container">
       <div class="hero-image-glow"></div>
-      <div class="profile-frame">
+      <div class="profile-frame zoomable-image" data-caption="B. Ruth Pavan - Hero Profile Portrait"
+        style="cursor: pointer;">
         <img src="6A3F26CF-CF48-453F-B931-DBA6CBD0E3ED_1_105_c.jpeg" alt="B. Ruth Pavan Profile" class="profile-pic"
           id="profile-img">
       </div>
@@ -115,98 +116,132 @@
             </div>
           </div>
 
-        <div class="glass-card">
-          <h3 class="card-title"><i class="fa-solid fa-bullseye"></i> Career Objectives</h3>
-          <ul class="objectives-list">
-            <li>To become a software employee</li>
-            <li>To become a photographer</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Strengths & Weaknesses / Professional Skills -->
-      <div class="about-right">
-        <div class="glass-card">
-          <h3 class="card-title"><i class="fa-solid fa-scale-balanced"></i> Personal Balance</h3>
-
-          <div class="strengths-weaknesses">
-            <div class="strength-item">
-              <h4 style="color: var(--accent); margin-bottom: 15px;"><i class="fa-solid fa-circle-check"></i> Strengths
-              </h4>
-              <ul class="sw-list">
-                <li>My confidence</li>
-                <li>My thinking</li>
-              </ul>
-            </div>
-
-            <div class="weakness-item">
-              <h4 style="color: var(--secondary); margin-bottom: 15px;"><i class="fa-solid fa-circle-exclamation"></i>
-                Weaknesses</h4>
-              <ul class="sw-list">
-                <li>Over confidence</li>
-                <li>Over thinking</li>
-              </ul>
-            </div>
+          <div class="glass-card">
+            <h3 class="card-title"><i class="fa-solid fa-bullseye"></i> Career Objectives</h3>
+            <ul class="objectives-list">
+              <li>To become a software employee</li>
+              <li>To become a photographer</li>
+            </ul>
           </div>
         </div>
 
-        <div class="glass-card">
-          <h3 class="card-title"><i class="fa-solid fa-code"></i> Technology Spectrum</h3>
-          <p style="color: var(--text-muted); margin-bottom: 15px;">
-            Hands-on familiarity with traditional technologies and modern development approaches:
-          </p>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <span
-              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">C</span>
-            <span
-              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Java</span>
-            <span
-              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Python</span>
-            <span
-              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">AI
-              Tools & APIs</span>
-            <span
-              style="background: var(--badge-bg); color: var(--badge-text); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Application
-              Development</span>
+        <!-- Strengths & Weaknesses / Professional Skills -->
+        <div class="about-right">
+          <div class="glass-card">
+            <h3 class="card-title"><i class="fa-solid fa-scale-balanced"></i> Personal Balance</h3>
+
+            <div class="strengths-weaknesses">
+              <div class="strength-item">
+                <h4 style="color: var(--accent); margin-bottom: 15px;"><i class="fa-solid fa-circle-check"></i>
+                  Strengths
+                </h4>
+                <ul class="sw-list">
+                  <li>My confidence</li>
+                  <li>My thinking</li>
+                </ul>
+              </div>
+
+              <div class="weakness-item">
+                <h4 style="color: var(--secondary); margin-bottom: 15px;"><i class="fa-solid fa-circle-exclamation"></i>
+                  Weaknesses</h4>
+                <ul class="sw-list">
+                  <li>Over confidence</li>
+                  <li>Over thinking</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="card-title"><i class="fa-solid fa-code"></i> Technology Spectrum</h3>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">
+              Hands-on familiarity with programming languages, tools, and developer platforms:
+            </p>
+            <div class="tech-grid">
+              <div class="tech-card">
+                <i class="fa-solid fa-code tech-icon"></i>
+                <h4 class="tech-name">C</h4>
+                <p class="tech-desc">System coding and algorithmic logic fundamentals.</p>
+                <div class="tech-level-container">
+                  <div class="tech-level-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="tech-card">
+                <i class="fa-brands fa-java tech-icon"></i>
+                <h4 class="tech-name">Java</h4>
+                <p class="tech-desc">Object-oriented application building and design.</p>
+                <div class="tech-level-container">
+                  <div class="tech-level-bar" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="tech-card">
+                <i class="fa-brands fa-python tech-icon"></i>
+                <h4 class="tech-name">Python</h4>
+                <p class="tech-desc">Data analysis, scripting, and server-side automation.</p>
+                <div class="tech-level-container">
+                  <div class="tech-level-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="tech-card">
+                <i class="fa-solid fa-robot tech-icon"></i>
+                <h4 class="tech-name">AI Tools & APIs</h4>
+                <p class="tech-desc">Leveraging model APIs and LLMs to create intelligent systems.</p>
+                <div class="tech-level-container">
+                  <div class="tech-level-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- Education Section -->
   <section id="education">
     <h2 class="section-title">Academic Qualifications</h2>
 
-    <div class="edu-container">
-      <div class="table-responsive glass-card" style="padding: 10px;">
-        <table class="edu-table" id="education-table">
-          <thead>
-            <tr>
-              <th>Class / Course</th>
-              <th>Institution / Board</th>
-              <th>Year of Passing</th>
-              <th>Percentage / GPA</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Diploma in Engineering</strong></td>
-              <td>A.A.N.M & V.V.R.S.R Polytechnic College</td>
-              <td>2025</td>
-              <td><span class="percentage-badge">96%</span></td>
-            </tr>
-            <tr>
-              <td><strong>Class 10th (SSC)</strong></td>
-              <td>G.D.E.T.M.C High School</td>
-              <td>2022</td>
-              <td><span class="percentage-badge">89.5%</span></td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="education-timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2022 - 2025</span>
+          <h3 class="timeline-degree">Diploma in Engineering</h3>
+          <h4 class="timeline-institution">A.A.N.M & V.V.R.S.R Polytechnic College</h4>
+          <p class="timeline-details">Graduated with a focus on core engineering and technology skills, building solid
+            fundamentals in development, algorithms, and application building.</p>
+          <div class="timeline-grade">
+            <span>Score:</span>
+            <span class="timeline-grade-val">96% Percentage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2021 - 2022</span>
+          <h3 class="timeline-degree">Class 10th (SSC)</h3>
+          <h4 class="timeline-institution">G.D.E.T.M.C High School</h4>
+          <p class="timeline-details">Completed secondary education with excellent records, initiating interest in
+            computer science and basic programming paradigms.</p>
+          <div class="timeline-grade">
+            <span>Score:</span>
+            <span class="timeline-grade-val">89.5% GPA Equivalent</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+
+  <!-- Lightbox Modal for Photo Preview -->
+  <div class="lightbox-modal" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <div class="lightbox-content-container">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Zoomed Photo">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
 
   <!-- Contact Section -->
   <section id="contact">
